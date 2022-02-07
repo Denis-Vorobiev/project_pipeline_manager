@@ -1,0 +1,7 @@
+input.form-control{
+    line-height: 0em;
+}
+textarea{
+    min-height: 40px;
+    height: auto;
+}

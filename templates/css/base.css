@@ -1,0 +1,30 @@
+
+.background{
+    background-color: rgb(230, 253, 252);   
+    
+    
+}
+
+.menu_bar{
+    width: 100vh;
+    height: 20px;
+    background-color: rgb(155, 155, 155);
+
+    
+}
+
+.menu_items_ul{
+
+}
+
+
+.menu_items_li{
+
+}
+.navbar{
+    height: 25PX;
+    padding: 5%;
+}
+.hidden{
+    display: none;
+}

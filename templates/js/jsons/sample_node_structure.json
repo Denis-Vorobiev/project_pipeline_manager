@@ -1,0 +1,23 @@
+{
+    "name": "sample_node",
+    "position":{
+        "x": 100,
+        "y": 100
+    },
+    "short description": "We need to do this, this and this",
+    "full description": "We need to do this, this and this We need to do this, this and this",
+    "tags":"tag1 tag2 tag3",
+    "executor": {
+        "name": "Denis",
+        "surname": "Vorobiev",
+        "slot": " Jun.Sft.Dev"
+    },
+    "resources":{
+        "money" : "100$",
+        "time" : "2h"
+    }
+
+
+
+
+}

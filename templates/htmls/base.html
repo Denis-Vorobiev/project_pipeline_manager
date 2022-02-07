@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/context_menu_style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\css\base.css">
+    <link rel="stylesheet" href="..\css\sample_node.css">
+    <link rel="stylesheet" href="..\css\bootstrap_override.css">
+
+
+    <meta charset="UTF-8">
+    <title>you node pipeline</title>
+</head>
+
+<body>
+
+
+    </div>
+    <div class="background w-100 vh-100" id="background">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="node_constructor hidden" id="node_constructor_template">
+            <div class="main_sq d-flex  flex-column zoomable" style="left: 30%; top: 35%; position: relative;">
+                <div class="short_desc mb-auto">
+                    <textarea type="text" class="form-control form-control-sm" placeholder="short description"
+                        id="short_desc"></textarea>
+                    <small id="input_help_text" class="text-muted input_help_text">
+                        6-10 words recomended
+                    </small>
+                    <div class="more_btn"></div>
+                </div>
+                <div class="executor d-flex justify-content-between">
+                    <div class="exe_name align-middle">
+
+                        <input type="text" class="form-control form-control-sm" id="empl_name" placeholder="empl. name">
+
+
+                    </div>
+                    <div class="exe_slot">
+                        <input type="text" class="form-control form-control-sm right_side_input" id="empl_slot"
+                            placeholder="empl. slot">
+                    </div>
+                </div>
+                <div class=" mt-auto  recource_sq ">
+                    <div class="time_sq d-flex  justify-content-between h-auto">
+                        <div class="key h-auto align-middle">
+                            <h3>time</h3>
+                        </div>
+                        <div class="value h-auto ">
+                            <input type="text" class="form-control right_side_input" placeholder="1.5h" id="t_value">
+                        </div>
+
+                    </div>
+                    <div class="money_sq d-flex justify-content-between h-auto ">
+
+                        <div class="key h-auto ">
+                            <h3>money</h3>
+                        </div>
+                        <div class="value h-auto ">
+                            <input type="text" class="form-control right_side_input" placeholder="12$" id="m_value">
+                        </div>
+
+                    </div>
+
+                </div>
+                <button type="button" class="btn btn-outline-light" id="edit_btn" onclick="">edit</button>
+                <button type="button" class="btn btn-primary" id="submit_btn" onclick="">submit</button>
+            </div>
+        </div>
+
+        <div id="context-menu">
+            <div class="item" id='create_node'>create Node</div>
+            <div class="item" id="create_BasicNode">create BasicNode</div>
+
+        </div>
+
+
+
+
+</body>
+<script src="..\js\classes.js"></script>
+<script src="..\js\context_menu.js"></script>
+<script type="module" src="..\js\spawn_node_from_menu.js"></script>
+<script type="module" src="..\js\node_instantiate.js"></script>
+<!-- <script type="module" src="..\js\shortcuts.js"></script> -->
+
+</html>

@@ -1,0 +1,154 @@
+h1 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 11px; /* or 110% */
+  letter-spacing: 0.05em;
+  color: rgba(14, 14, 14, 0.8);
+}
+h2 {
+  font-family: Raleway;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 9px;
+
+  color: rgba(0, 0, 0, 0.8);
+}
+h3 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+  color: rgba(0, 0, 0, 0.8);
+}
+input{
+
+}
+
+.main_sq {
+  position: absolute;
+  display: block;
+  padding: 6px;
+  height: auto;
+  width: 115px;
+  background: linear-gradient(145.54deg, #f3e8cb 7.08%, #99e1e5 92.9%);
+  box-shadow: 0px 3px 6px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.short_desc {
+  padding: 0px;
+  height: auto;
+}
+.executor{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.recource_sq {
+  padding: 0;
+  margin-top: 10px;
+}
+.recource_sq * {
+  padding: 0;
+  margin: 0;
+}
+/* .zoomable {
+  width: inherit;
+  height: inherit;
+  background: #666;
+  transform: scale(1);
+  min-width: 100vh;
+  min-height: 100vh;
+} */
+.wrapper{
+  min-width: 100vh;
+  min-height: 100vh;  
+}
+
+.input_help_text{
+  font-size: 8px;
+}
+.form-control-sm{
+  padding: 1px;
+  height: auto;
+  
+}
+.form-control{
+  padding: 1px;
+  height: auto;
+
+}
+::placeholder{
+  margin: 0;
+  font-size: 8px;
+  line-height: 10px;
+}
+input,textarea
+{
+    font-size:10px;
+    line-height: 13px;
+}
+input {
+  float: right;
+  clear: both;
+}
+.key{
+  align-self: center;
+  
+}
+.recource_sq *{
+  width: 100%;
+}
+.value{
+  width: 100%;
+}
+.right_side_input{
+  text-align: right;
+
+}
+.btn{
+  
+  
+} 
+#edit_btn{
+  padding: 0;
+  font-size: 0.7rem;
+  font-weight: 200;
+  border: none;
+  width: 50%;
+  margin-top: 0.3rem;
+  margin-left:  auto;
+  margin-right: 0;
+  text-align: right;
+  color: black;
+  opacity: 0.5;
+}
+#edit_btn:hover{
+  font-weight: 300;
+  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0);
+}
+#submit_btn{
+  margin-top: 0.3rem;
+  opacity: 0.8;
+  border: none;
+  line-height: 0.5rem;
+  background-color: #3498DB;
+}
+#submit_btn:hover{
+  background-color: #227db9;
+  border: rgb(85, 85, 255);
+}
+.input_submit_btn{
+  margin-top: 0.3rem;
+  opacity: 0.8;
+  border: none;
+  line-height: 0.5rem;
+  background-color: #3498DB;
+  width: 100%;
+}
+
