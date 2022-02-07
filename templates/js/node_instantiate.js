@@ -13,6 +13,7 @@ class NodeInstantiatorClass {
         this.createBaseCardDiv()
         document.getElementById('background').appendChild(this.base_card)
         this.createShortDescriptionDiv()
+        
         this.createExecutorDiv()
         this.createResourcesDiv()
         this.createSubmitButton()
