@@ -21,11 +21,8 @@ class Node {
         console.log(JSON.stringify(this.props_dict))
     }
     append_special_props(special_props){
-
         this.props_dict[this.node_type + " properties"] = special_props
     }
-
-
 }
 
 class BasicNode extends Node {

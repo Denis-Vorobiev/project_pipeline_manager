@@ -1,6 +1,7 @@
 
-.background{
-    background-color: rgb(230, 253, 252);   
+body{
+    background-color: rgb(70, 70, 70);
+    color :rgba(255, 255, 255, 0.301)   
     
     
 }
@@ -22,8 +23,10 @@
 
 } */
 .navbar{
-    height: 25PX;
-    padding: 5%;
+    height: auto;
+    padding: 5px;
+    background: rgb(43, 43, 43);
+    color : white;
 }
 .hidden{
     display: none;

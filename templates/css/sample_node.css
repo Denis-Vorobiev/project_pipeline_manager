@@ -110,36 +110,27 @@ input {
   text-align: right;
 
 }
-.btn{
-  
-  
-} 
-#edit_btn{
+ 
+.edit_btn{
   padding: 0;
   font-size: 0.7rem;
   font-weight: 200;
   border: none;
-  width: 50%;
+  width: 30%;
   margin-top: 0.3rem;
-  margin-left:  auto;
-  margin-right: 0;
+  margin-left:  70%;
+  margin-right: 1px;
   text-align: right;
   color: black;
   opacity: 0.5;
 }
-#edit_btn:hover{
+.edit_btn:hover{
   font-weight: 300;
   opacity: 0.8;
   background-color: rgba(255, 255, 255, 0);
 }
-#submit_btn{
-  margin-top: 0.3rem;
-  opacity: 0.8;
-  border: none;
-  line-height: 0.5rem;
-  background-color: #3498DB;
-}
-#submit_btn:hover{
+
+.input_submit_btn:hover{
   background-color: #227db9;
   border: rgb(85, 85, 255);
 }
