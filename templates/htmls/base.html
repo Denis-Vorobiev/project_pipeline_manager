@@ -31,23 +31,23 @@
 
 
     </div>
-    <div class="w-100 vh-100 pattern-cross-dots-md" id="background">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <div class="w-100 vh-100 pattern-cross-dots-md" id="background" draggable="false">
+        <nav class="navbar navbar-expand-lg navbar-dark" draggable="false">
+            <a class="navbar-brand" href="#" draggable="false">Navbar</a>
+            <button class="navbar-toggler" draggable="false" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" draggable="false"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active dropdown">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item active dropdown" draggable="false">
+                        <a class="nav-link" href="#" draggable="false">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item dropdown" draggable="false">
+                        <a class="nav-link" href="#" draggable="false">Link</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" draggable="false">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown
@@ -72,7 +72,7 @@
 
         
 
-        <div id="context-menu">
+        <div id="context-menu" draggable="false">
             <div class="item" id='create_node'>create Node</div>
             <div class="item" id="create_BasicNode">create BasicNode</div>
 
@@ -82,7 +82,7 @@
 
 
 </body>
-<script src="..\js\classes.js"></script>
+<script type="module" src="..\js\classes.js"></script>
 <script src="..\js\context_menu.js"></script>
 <script type="module" src="..\js\spawn_node_from_menu.js"></script>
 <script type="module" src="..\js\node_instantiate.js"></script>

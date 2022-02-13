@@ -16,6 +16,15 @@ class Sc{
     
         return this.div
     }
+    createTextArea(className='',placeholder='',value=''){
+        this.div = document.createElement('textarea')
+        this.div.className = className
+        this.div.placeholder = placeholder
+        this.div.value = value
+    
+        return this.div
+
+    }
     createHelement(hValue = 1,innerText = ''){
         this.h = document.createElement('h'+hValue)
         this.h.innerText = innerText

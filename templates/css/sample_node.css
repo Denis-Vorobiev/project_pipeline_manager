@@ -1,8 +1,10 @@
+
+
 h1 {
   font-family: Raleway;
   font-style: normal;
   font-weight: 300;
-  font-size: 10px;
+  font-size: 0.875rem;
   line-height: 11px; /* or 110% */
   letter-spacing: 0.05em;
   color: rgba(14, 14, 14, 0.8);
@@ -11,8 +13,9 @@ h2 {
   font-family: Raleway;
   font-style: italic;
   font-weight: 300;
-  font-size: 8px;
-  line-height: 9px;
+  font-size: 0.675rem;
+  line-height: auto;
+  margin: 0;
 
   color: rgba(0, 0, 0, 0.8);
 }
@@ -20,31 +23,50 @@ h3 {
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 0.675rem;
   line-height: 12px;
   /* identical to box height */
   color: rgba(0, 0, 0, 0.8);
 }
-input{
-
+input {
 }
 
-.main_sq {
+.base_card {
   position: absolute;
   display: block;
-  padding: 6px;
+  padding: 0  6px 6px 6px;
   height: auto;
   width: 115px;
   background: linear-gradient(145.54deg, #f3e8cb 7.08%, #99e1e5 92.9%);
   box-shadow: 0px 3px 6px 2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
+.card_header {
+  margin-bottom: 0;
+  background: none;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  font-size: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.card_header > * >* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.475rem;
+}
 
 .short_desc {
   padding: 0px;
   height: auto;
 }
-.executor{
+.executor {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -64,82 +86,100 @@ input{
   min-width: 100vh;
   min-height: 100vh;
 } */
-.wrapper{
+.wrapper {
   min-width: 100vh;
-  min-height: 100vh;  
+  min-height: 100vh;
 }
 
-.input_help_text{
+.input_help_text {
   font-size: 8px;
 }
-.form-control-sm{
+.form-control-sm {
   padding: 1px;
   height: auto;
-  
 }
-.form-control{
+.form-control {
   padding: 1px;
   height: auto;
-
 }
-::placeholder{
+::placeholder {
   margin: 0;
   font-size: 8px;
   line-height: 10px;
 }
-input,textarea
-{
-    font-size:10px;
-    line-height: 13px;
+input,
+textarea {
+  font-size: 10px;
+  line-height: 13px;
 }
 input {
   float: right;
   clear: both;
 }
-.key{
+.key {
   align-self: center;
-  
 }
-.recource_sq *{
+.recource_sq * {
   width: 100%;
 }
-.value{
+.value {
   width: 100%;
 }
-.right_side_input{
+.value > h2 {
   text-align: right;
-
 }
- 
-.edit_btn{
+.right_side_align {
+  text-align: right;
+}
+
+.edit_btn {
   padding: 0;
   font-size: 0.7rem;
   font-weight: 200;
   border: none;
   width: 30%;
   margin-top: 0.3rem;
-  margin-left:  70%;
+  margin-left: 70%;
   margin-right: 1px;
   text-align: right;
   color: black;
   opacity: 0.5;
 }
-.edit_btn:hover{
+.edit_btn:hover {
   font-weight: 300;
   opacity: 0.8;
   background-color: rgba(255, 255, 255, 0);
 }
 
-.input_submit_btn:hover{
+.input_submit_btn:hover {
   background-color: #227db9;
   border: rgb(85, 85, 255);
 }
-.input_submit_btn{
+.input_submit_btn {
   margin-top: 0.3rem;
   opacity: 0.8;
   border: none;
   line-height: 0.5rem;
-  background-color: #3498DB;
+  background-color: #3498db;
   width: 100%;
 }
-
+.remove_btn {
+  padding: 2px;  
+  align-content: center;
+  background: rgb(241, 122, 122);
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  font-size: 6px;
+  justify-content: center;
+  line-height: 5px;
+  color: rgba(0, 0, 0, 0.651);
+}
+.remove_btn:hover {
+  background: rgb(250, 68, 68);
+  color: white;
+  transition-duration: 0.5s;
+  text-shadow: #e9ecec;
+}

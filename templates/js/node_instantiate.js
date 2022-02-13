@@ -112,24 +112,7 @@ export class NodeInstantiatorClass {
       let base_card_object_id = e.path[1].attributes.id.nodeValue;
       let current_card = document.getElementById(base_card_object_id);
       let inputs = current_card.getElementsByTagName("input");
-      ;
-
-      // let inputs_0 = sc.createDiv(empl_name_classlist,'','',inputs[0].value)
-      let inputs_0_v = inputs[0].value
-      inputs[0].remove()
-      let a = current_card.getElementsByClassName('executor')
-      console.log(sc.createDiv(empl_name_classlist,'','',inputs_0_v))
-      this.a.appendChild(sc.createDiv(empl_name_classlist,'','',inputs_0_v))
-
-      /*{
-          return $('<div class ="' +
-          empl_name_classlist +
-          '">' +
-          inputs[0].value +
-          "</div>")
-      }*/
-        
-       // empl name
+ 
     });
   }
   createEditButton() {
@@ -138,5 +121,6 @@ export class NodeInstantiatorClass {
   }
 }
 export function instantiateHTMLNode(posX, posY, id) {
-  let nodeInstantiateObject = new NodeInstantiatorClass(posX, posY, id);
+  let HTMLNode = new NodeInstantiatorClass(posX, posY, id);
+  return  HTMLNode
 }
