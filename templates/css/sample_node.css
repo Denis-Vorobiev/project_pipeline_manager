@@ -4,16 +4,16 @@ h1 {
   font-family: Raleway;
   font-style: normal;
   font-weight: 300;
-  font-size: 0.875rem;
-  line-height: 11px; /* or 110% */
-  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  line-height: 1rem; /* or 110% */
+  letter-spacing: auto;
   color: rgba(14, 14, 14, 0.8);
 }
 h2 {
   font-family: Raleway;
   font-style: italic;
   font-weight: 300;
-  font-size: 0.675rem;
+  font-size: 0.575rem;
   line-height: auto;
   margin: 0;
 
@@ -40,6 +40,10 @@ input {
   background: linear-gradient(145.54deg, #f3e8cb 7.08%, #99e1e5 92.9%);
   box-shadow: 0px 3px 6px 2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+}
+.base_card_move{
+  background: linear-gradient(145.54deg, #9580FF 7.08%, #FFB961 92.9%);
+
 }
 .card_header {
   margin-bottom: 0;
@@ -69,7 +73,15 @@ input {
 .executor {
   margin-top: 10px;
   margin-bottom: 10px;
+  column-gap: .5em;
 }
+
+
+.executor > .align-middle:nth-child(2){
+  text-align: right;
+  
+}
+
 .recource_sq {
   padding: 0;
   margin-top: 10px;
@@ -117,15 +129,19 @@ input {
   clear: both;
 }
 .key {
-  align-self: center;
+  text-align: left;
 }
 .recource_sq * {
   width: 100%;
 }
+.sub-reso{
+  column-gap: .5em;
+}
 .value {
   width: 100%;
+  text-align: left;
 }
-.value > h2 {
+.value:first-child {
   text-align: right;
 }
 .right_side_align {
@@ -182,4 +198,15 @@ input {
   color: white;
   transition-duration: 0.5s;
   text-shadow: #e9ecec;
+}
+.output{
+  background-color: blue;
+  width: 10px;
+  height: 9px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+.kek{
+  width: 110%;
 }

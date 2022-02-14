@@ -92,6 +92,12 @@ export class BasicNode extends Node {
       "basse_card" + String(this.id),
       this.baseCardDivPosition
     )
+    this.startBaseCardStyle = this.baseCardDiv.classList
+    this.baseCardDiv.draggable = true
+    
+    this.baseCardDiv.ondragend = ((e) => this.moveTo(e.clientX,e.clientY)
+    )
+
     document.getElementById("background").appendChild(this.baseCardDiv)
   }
   createHeaderDiv() {
@@ -115,15 +121,19 @@ export class BasicNode extends Node {
 
     
   }
-  drag(posX,posY){
-    console.log(posX,posY)    
-    this.baseCardDiv.style.left =posX
-    this.baseCardDiv.style.top =posY
-
+  moveTo(posX,posY){
+    this.xPos = posX
+    this.yPos = posY        
+    this.baseCardDiv.style.left =posX + "px"
+    this.baseCardDiv.style.top =posY + "px"
+    
   }
+  
+  
   removeNode(){    
     this.baseCardDiv.remove()
   }
+
 
 
   createShortDescriptionDiv() {
@@ -179,9 +189,10 @@ export class BasicNode extends Node {
     this.timeDivValueFact = sc.createHelement(2, this.time)
     this.timeDivValueFact.style = bs.hidden
 
+    this.timeDivValue.append(this.timeDivValueFact)
     this.timeDiv.appendChild(this.timeDivKey)
     this.timeDiv.appendChild(this.timeDivValue)
-    this.timeDiv.appendChild(this.timeDivValueFact)
+    
     this.resourcesDiv.appendChild(this.timeDiv)
 
     this.moneyDiv = sc.createDiv(bs.subResoDiv)
@@ -192,10 +203,11 @@ export class BasicNode extends Node {
     this.moneyDivValueFact = sc.createHelement(2, this.money)
     this.moneyDivValueFact.style = bs.hidden
 
+    this.moneyDivValue.append(this.moneyDivValueFact)
     this.moneyDivValue.appendChild(this.moneyDivValueInput)
     this.moneyDiv.appendChild(this.moneyDivKey)
     this.moneyDiv.appendChild(this.moneyDivValue)
-    this.moneyDiv.appendChild(this.moneyDivValueFact)
+    
     this.resourcesDiv.appendChild(this.moneyDiv)
 
     this.baseCardDiv.appendChild(this.resourcesDiv)
@@ -273,3 +285,4 @@ export function createBasicNode(posX, posY) {
   
   
 }
+let test = createBasicNode(200, 200)
